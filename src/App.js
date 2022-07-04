@@ -5,7 +5,7 @@ import api from './services/api.js'
 
 function App() {
 
- 
+
 
 
 const [ input, setInput ] = useState('') //input é o valor do estado, setInput é para passar o novo valor do estado
@@ -39,7 +39,7 @@ async function Pesquisar(){ //função assincrona
         type="text"
         placeholder="Digite um nome de pokémon"
         value={input}
-        onChange={(evento) => setInput(evento.target.value) } // evento.target.value é o valor do input que está sendo mandado para o setInput
+        onChange={(evento) => setInput(evento.target.value.toLowerCase()) } // evento.target.value é o valor do input que está sendo mandado para o setInput
         />
 
         <div className="botao">
